@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(44, 44, 44);
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(243, 199, 206);
+  box-shadow: 0 0 20px #bebebe;
+  border-radius: 5px;
+}
+
+#num-input {
+  grid-column: 2 / 5;
+}
+
+#num-input {
+  border: 1px solid rgb(243, 199, 206);
+  background-color: rgb(99, 160, 211);
+  outline: none;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  font-family: fantasy;
+}
+
+button {
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 22px;
+  border: 1px solid rgb(243, 199, 206);
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.number {
+  background-color: rgb(99, 160, 211);
+  color: white;
+}
+
+.number:hover {
+  background-color: rgb(109, 165, 211);
+}
+
+#decimal {
+  background-color: rgb(99, 160, 211);
+  color: white;
+}
+
+#decimal:hover {
+  background-color: rgb(109, 165, 211);
+}
+
+#equals {
+  color: white;
+  background-color: rgb(99, 160, 211);
+}
+
+#equals:hover {
+  background-color: rgb(243, 199, 206);
+}
+
+#erase {
+  color: white;
+  background-color: rgb(99, 160, 211);
+}
+
+#clear:hover {
+  background-color: rgb(243, 199, 206);
+}
+
+.ops {
+  color: rgb(58, 58, 58);
+  background-color: rgb(99, 160, 211);
+}
+
+.ops:hover {
+  color: rgb(243, 199, 206);
+  background-color: rgb(109, 165, 211);
+}
